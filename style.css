@@ -8,20 +8,22 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 48px;
+  position: fixed;
+  width: 100%;
+  background-color: #09090a;
 }
 
 body {
   background-color: #09090a;
   color: white;
-
   height: 100vh;
 }
 
 #form-habits {
   display: flex;
-  padding: 0 48px;
+  padding: 182px 48px 48px;
+  width: fit-content;
 }
 
 .habits {
@@ -35,7 +37,6 @@ body {
   width: 64px;
   height: 64px;
   font-size: 32px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,12 +56,10 @@ body {
 
 .day div {
   margin-bottom: 8px;
-
   font-family: "Roboto Mono";
   font-size: 20px;
   line-height: 125%;
   color: #a1a1aa;
-
   text-align: center;
 }
 
@@ -70,11 +69,9 @@ button {
   border: 1px solid #8b5cf6;
   background-color: transparent;
   color: white;
-
   display: flex;
   align-items: center;
   gap: 12px;
-
   font-family: "Inter";
   font-weight: 600;
   font-size: 16px;
@@ -97,4 +94,10 @@ input {
 input:checked {
   background: #8b5cf6;
   border: 2px solid #a78bfa;
+}
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
 }
